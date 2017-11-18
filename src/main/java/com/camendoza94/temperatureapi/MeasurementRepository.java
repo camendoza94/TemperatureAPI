@@ -8,5 +8,5 @@ import java.util.Date;
 import java.util.List;
 
 public interface MeasurementRepository extends MongoRepository<Measurement, String> {
-    List<Measurement> findByTimestampBetween(@Param("dateInit") @DateTimeFormat(pattern="yyyy-MM-dd") Date dateInit, @Param("dateEnd") @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd);
+    List<Measurement> findByTimestampBetween(@Param("dateInit") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateInit, @Param("dateEnd") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateEnd);
 }
